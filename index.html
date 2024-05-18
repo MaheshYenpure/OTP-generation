@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up with OTP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SIGN UP</h1>
+        <div id="signupForm">
+            <input type="text" id="username" placeholder="Enter your username">
+            <input type="text" id="email" placeholder="Enter your email">
+            <button id="generateOtpBtn" onclick="generateOTP()">Generate OTP</button>
+            <div class="otp-section" id="otpSection">
+                <input type="text" id="otpInput" placeholder="Enter OTP">
+                <button id="verifyOtpBtn" onclick="verifyOTP()">Verify OTP</button>
+                <button id="clearOtpBtn" onclick="clearOTP()">Clear OTP</button>
+            </div>
+            <p id="otpFeedback" class="feedback"></p>
+        </div>
+        <div id="successMessage" class="hidden">
+            <h2>Successful!</h2>
+            <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
